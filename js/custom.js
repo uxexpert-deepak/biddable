@@ -93,4 +93,24 @@ $(document).ready(function () {
             'slow');
     });
 
+
+
+    window.setTimeout(function () {
+        $('.inner-fill').addClass('fill-complete');
+    }, 2000);
+
+
+
+
+    window.setTimeout(function () {
+
+        $('.progress').addClass('shrink-loader');
+    }, 5500);
+    window.setTimeout(function () {
+        $('body').addClass('finsihed');
+        $('.loading-screen-spinner').fadeOut();
+        $('.banner-container').addClass('came-in-bg');
+        $('header').fadeIn();
+    }, 6200);
+
 });
